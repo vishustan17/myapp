@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create a new tag</h1>
+   <div>
+    <h1>head1</h1>
+    <h2>head2</h2>
+   </div>
+   <button onclick="displayTag()">create</button>
+   <script>
+function displayTag()
+{
+    let h1 = document.createElement("h1");
+    h1.textContent = "new tag"
+
+    let div = document.querySelector("div");
+   // div.insertBefore(h1 , div.lastElementChild)
+   //div.append(h1)
+   //div.prepend(h2)
+}
+
+   </script>
+</body>
+</html>

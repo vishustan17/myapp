@@ -1,0 +1,416 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  box-sizing: border-box;
+}
+
+
+/* ----------------------------NAV STYLE-------------------------------------  */
+
+nav{
+  height: 70px;
+  color: white;
+  background-color: rgb(6, 6, 63);
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+#logo h1{
+  font-family: 'Bruno Ace SC', cursive;
+  letter-spacing: 4px;
+}
+#search-bar input{
+  width: 300px;
+  height: 35px;
+  border: none;
+  padding-left: 20px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+#search-bar button{
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  margin-left: -80px;
+  font-size: 15px;
+}
+#add-movie a{
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.2s linear;
+}
+#add-movie a:hover{
+  background-color: white;
+  color: rgb(6, 6, 63);
+}
+
+#fav-movie a{
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.2s linear;
+}
+#fav-movie a:hover{
+  background-color: white;
+  color: rgb(6, 6, 63);
+}
+
+
+
+.suggestion-box
+{
+  width: 300px;
+  height: auto;
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 54px;
+  left: 506px;
+  border-radius: 4px;
+}
+.suggestion-box ul 
+{
+  list-style:none;
+}
+
+.suggestion-box ul li
+{
+  background-color: gray;
+  transition:0.2s;
+}
+.suggestion-box ul li:hover
+{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.788);
+}
+
+
+
+/* ----------------------------HOME STYLE-------------------------------------  */
+
+.home{
+  padding: 20px 100px;
+}
+.all-movies
+{
+  display: flex;
+  /* grid-template-columns: 200px 200px 200px 200px; */
+  row-gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  
+}
+
+/* .movie
+{
+  margin-top: 15px;
+  border: solid 2px black;
+} */
+.kuchbi
+{
+  border:solid 2px
+}
+.movie{
+  width: 250px;
+  height: auto;
+  text-align: center;
+  padding: 12px;
+  border: solid 1px black;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.movie img{
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+}
+.movie:hover{
+  transform: scale(1.05);
+}
+#title 
+{
+ color:white;
+ background-color: black;
+ text-align: center;
+ position:sticky;
+ top: 70px;
+ z-index: 100;
+
+}
+
+/* Apply some basic styles to the form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/*   animation in the movielist compinent for the buttons*/
+
+.add-btn {
+  color: red;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  animation: emptyheart 0.5s;
+}
+
+.remove-btn
+{
+  color: red;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  animation: filledheart 0.5s;
+}
+@keyframes filledheart 
+{
+  0% {
+    transform: scale(0);
+  }  
+  60%
+{
+  transform: scale(1.5);
+}
+100%
+{
+  transform: scale(1);
+}
+}
+
+@keyframes emptyheart 
+{
+  0% {
+    transform: scale(0);
+  }  
+  60%
+{
+  transform: scale(1.5);
+}
+100%
+{
+  transform: scale(1);
+}
+}
+.add-movie{
+  width: 80vw;
+  margin: 50px auto;
+  text-align: center;
+}
+.add-movie h1{
+  margin: 20px;
+}
+.add-movie form{
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 8px;
+}
+.add-movie form input{
+  display: inline-block;
+  width: 80%;
+  height: 35px;
+  margin: 5px auto;
+  border-radius: 4px;
+  border: solid 1px black;
+  transition: 0.2s;
+}
+.add-movie form input:focus{
+  transform: scale(1.1);
+}
+.add-movie form input[type="checkbox"]
+{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.add-movie form input::placeholder
+{
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.add-movie form fieldset{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30px 100px 30px 100px 30px 100px;
+}
+.add-movie form textarea{
+  width: 80%;
+  margin: auto;
+} 
+.add-movie form input[type="submit"]
+{
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: 600;
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  transition: 0.2s
+}
+.add-movie form input[type="submit"]:hover
+{
+  background-color:black;
+  color: white;
+}
+/*  */
+
+
+/* Styles for the body */
+body {
+  /* background-color:rgba(0, 0, 0, 0.575); */
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styles for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Styles for the movie list */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+.movie-card {
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.movie-card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.movie-card a {
+  display: block;
+  padding: 1rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.movie-card a:hover {
+  background-color: #666;
+}
+.home-background {
+  background-color: black;
+}
+
+.movie-list-background {
+  background-color:black;
+}
+.movie-cards {
+  background-color: rgba(128, 128, 128, 0.788);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}

@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+  }
+  table{
+    margin: auto;
+  }
+  form{
+    margin: 20px auto;
+  }
+  input{
+    margin: 0px 4px;
+  }
+  thead{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+  }

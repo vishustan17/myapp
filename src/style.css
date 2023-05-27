@@ -1,0 +1,87 @@
+/* Navbar
+nav {
+    background-color: rgb(114, 9, 137);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin :0;
+    padding :0;
+    display: flex;
+}
+
+li {
+    margin :0 10px;
+}
+
+a{
+    display : block;
+    color : white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(135, 8, 254);
+} */
+
+/*hamberger_div*/
+/* .nav_ham{
+    background-color: brown;
+    height:70px;
+    display: flex;
+    margin: auto;
+    padding: 0 50px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo i{
+    color : green;
+    font-size: 40px;
+}
+
+#hamberger i{
+    color : blue;
+    font-size: 40px;
+}
+
+#dropdown{
+    background-color: aqua;
+    position: absolute;
+    right: 100px;
+    top:80px;
+}
+
+#dropdown ul{
+    list-style:none;
+}
+
+#dropdown ul li a{
+    color :black;
+    text-decoration:none;
+    display: block;
+    margin: 5px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: rgb(40, 24, 54);
+    color: white;
+    text-align:center;
+    padding : 20px;
+    position : fixed;
+    left : 0;
+    bottom : 0;
+    width: 100%;
+}
+
+footer p {
+    margin : 0;
+} */
